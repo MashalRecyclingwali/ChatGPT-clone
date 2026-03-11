@@ -1,0 +1,98 @@
+/* General Page Styling */
+body {
+    background-color: #212121; /* Dark Mode Background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.chat-container {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    background-color: #212121;
+}
+
+/* Chat Window - Where messages scroll */
+.chat-window {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Message Bubbles */
+.message {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    max-width: 80%;
+}
+
+.user {
+    align-self: flex-end; /* Pushes user text to the right */
+    flex-direction: row;
+}
+
+.ai {
+    align-self: flex-start; /* Pushes AI text to the left */
+}
+
+.text {
+    padding: 12px;
+    border-radius: 15px;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+.user .text {
+    background-color: #3e3e3e;
+    color: white;
+}
+
+.ai .text {
+    background-color: transparent;
+    color: #ececf1;
+}
+
+.avatar {
+    font-size: 20px;
+}
+
+/* Bottom Input Area */
+.input-area {
+    padding: 20px;
+    background-color: #212121;
+}
+
+.input-wrapper {
+    display: flex;
+    background-color: #2f2f2f;
+    border: 1px solid #424242;
+    border-radius: 12px;
+    padding: 10px 15px;
+    align-items: center;
+}
+
+input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    color: white;
+    outline: none;
+    font-size: 16px;
+}
+
+.send-btn {
+    background-color: #676767;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
